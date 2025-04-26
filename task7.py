@@ -6,3 +6,14 @@
 # Первый словарь: {'a': 100, 'b': 200, 'c':300}
 # Второй словарь: {'a': 300, 'b': 200, 'd':400}
 # Результат: {'a': 400, 'b': 400, 'd': 400, 'c': 300}
+dic1={'a': 100, 'b': 200, 'c':300}
+dic2={'a': 300, 'b': 200, 'd':400}
+dic={}
+for i,j in dic1.items():
+    dic[i]=j
+for i,j in dic2.items():
+    if i in dic:
+        dic[i]=dic[i]+j
+    else:
+        dic[i]=j
+print(dic)
