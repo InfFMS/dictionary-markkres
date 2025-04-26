@@ -4,3 +4,17 @@
 # и предлагает пользователю ввести слово для перевода. 
 # Если введенного слова нет в словаре выводится сообщение "нет такого слова".
 # Используйте словари для словаря:)
+dic={"привет":"hello", "прости":"sorry","яблоко":"apple","ночь":"night","жизнь":"life","мама":"mom","папа":"dad","время":"time","числа":"numbers","словарь":"dictionary"}
+dic2={v:k for k,v in dic.items()}
+tipe=input("ru or en ")
+slovo=input()
+if tipe=="ru":
+    if slovo in dic:
+        print(dic[slovo])
+    else:
+        print("нет такого слова")
+else:
+    if slovo in dic2:
+        print(dic2[slovo])
+    else:
+        print("нет такого слова")
